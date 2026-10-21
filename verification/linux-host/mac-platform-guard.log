@@ -1,0 +1,2 @@
+build.sh: PASS rejects non-macOS host (exit 2): Use an Apple Silicon Mac (native arm64 Terminal).
+build_pkg.sh: PASS rejects non-macOS host (exit 2): Run on macOS

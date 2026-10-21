@@ -1,0 +1,19 @@
+name: macOS Apple Silicon development build
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build, test and package arm64
+        run: bash packaging/macos/build.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: macOS-arm64-development-and-logs
+          path: |
+            dist-mac/*
+            build-mac-arm64/Testing/Temporary/LastTest.log

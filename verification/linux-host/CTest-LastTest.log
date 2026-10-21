@@ -1,0 +1,58 @@
+Start testing: Oct 21 19:16 UTC
+----------------------------------------------------------
+1/2 Testing: cue_engine
+1/2 Test: cue_engine
+Command: "/workspace/scratch/27d876101a85/build-mac-host/tcb_core_tests"
+Directory: /workspace/scratch/27d876101a85/build-mac-host
+"cue_engine" start time: Oct 21 19:16 UTC
+Output:
+----------------------------------------------------------
+Cue engine release-safe tests passed (7 groups)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cue_engine" end time: Oct 21 19:16 UTC
+"cue_engine" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: ltc_osc_integration
+2/2 Test: ltc_osc_integration
+Command: "/workspace/scratch/27d876101a85/build-mac-host/tcb_integration_artefacts/Release/tcb_integration"
+Directory: /workspace/scratch/27d876101a85/build-mac-host
+"ltc_osc_integration" start time: Oct 21 19:16 UTC
+Output:
+----------------------------------------------------------
+ALSA lib seq_hw.c:528:(snd_seq_hw_open) open /dev/snd/seq failed: No such file or directory
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 30 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 30 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 30 fps
+PASS LIVE callback -> FIFO -> worker -> automatic LTC recovery -> cue -> OSC UDP / MIDI sink; repeated pauses, selective/all reset, disarmed input, device restart
+PASS drop-frame / reverse / silence / low noise rejection and invalid output
+PASS v2 migration (including disabled rows), v3 roundtrip, empty document and corrupt-settings rejection
+PASS MIDI bytes, auto note-off, explicit off, retrigger, panic, destructor cleanup and LTC -> MIDI dispatch (injected sink)
+All LTC / OSC / MIDI / settings integration scenarios passed
+<end of output>
+Test time =   1.72 sec
+----------------------------------------------------------
+Test Passed.
+"ltc_osc_integration" end time: Oct 21 19:16 UTC
+"ltc_osc_integration" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Oct 21 19:16 UTC

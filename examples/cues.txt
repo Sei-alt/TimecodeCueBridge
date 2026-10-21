@@ -1,0 +1,4 @@
+# Example ONLY. Replace addresses with actual Daslight OSC mappings.
+01:00:00:00 | Song 01 | /replace/with/daslight/address | 1
+01:10:00:00 | Song 02 | /replace/with/daslight/address | 1
+01:20:00:00 | Song 03 | /replace/with/daslight/address | 1

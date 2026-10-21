@@ -1,0 +1,70 @@
+ninja: warning: premature end of file; recovering
+[0/2] Re-checking globbed directories...
+[1/2] Re-running CMake...
+-- Checking for modules 'webkit2gtk-4.0;gtk+-x11-3.0'
+--   Package 'webkit2gtk-4.0', required by 'virtual:world', not found
+--   Package 'gtk+-x11-3.0', required by 'virtual:world', not found
+-- Configuring juceaide
+-- Building juceaide
+-- Exporting juceaide
+-- Testing juceaide
+-- Finished setting up juceaide
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/27d876101a85/build-mac-host
+[0/2] Re-checking globbed directories...
+[1/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_graphics/juce_graphics.cpp.o
+[2/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
+[3/37] Building C object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+[4/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_events/juce_events.cpp.o
+[5/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+[6/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+[7/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
+[8/37] Building CXX object CMakeFiles/TcbIcon.dir/juce_binarydata_TcbIcon/JuceLibraryCode/BinaryData1.cpp.o
+[9/37] Linking CXX static library libTcbIcon.a
+[10/37] Building CXX object CMakeFiles/tcb_scene_tests.dir/third_party/JUCE/modules/juce_core/juce_core.cpp.o
+[11/37] Linking CXX executable tcb_scene_tests_artefacts/Release/tcb_scene_tests
+[12/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/Main.cpp.o
+[13/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/LtcCapture.cpp.o
+[14/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/MainComponent.cpp.o
+[15/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/OscOutput.cpp.o
+[16/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_osc/juce_osc.cpp.o
+[17/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/SceneEditor.cpp.o
+[18/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_events/juce_events.cpp.o
+[19/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+[20/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/MidiOutput.cpp.o
+[21/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/src/SceneSettings.cpp.o
+[22/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp.o
+In file included from /workspace/scratch/27d876101a85/toolroot/usr/include/alsa/asoundlib.h:56,
+                 from /workspace/scratch/27d876101a85/mac-project/TimecodeCueBridge/third_party/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp:159:
+/workspace/scratch/27d876101a85/toolroot/usr/include/alsa/pcm.h:641:26: warning: ISO C++ forbids zero-size array ‘pos’ [-Wpedantic]
+  641 |         unsigned int pos[0];    /**< channel position array */
+      |                          ^
+/workspace/scratch/27d876101a85/toolroot/usr/include/alsa/pcm.h:647:25: warning: invalid use of ‘struct snd_pcm_chmap’ with a zero-size array in ‘struct snd_pcm_chmap_query’ [-Wpedantic]
+  647 |         snd_pcm_chmap_t map;            /**< available channel map */
+      |                         ^~~
+/workspace/scratch/27d876101a85/toolroot/usr/include/alsa/pcm.h:641:22: note: array member ‘unsigned int snd_pcm_chmap::pos [0]’ declared here
+  641 |         unsigned int pos[0];    /**< channel position array */
+      |                      ^~~
+In file included from /workspace/scratch/27d876101a85/toolroot/usr/include/alsa/asoundlib.h:58:
+/workspace/scratch/27d876101a85/toolroot/usr/include/alsa/ump.h:94:72: warning: ‘int snd_ump_endpoint_info(snd_ump_t*, snd_ump_endpoint_info_t*)’ hides constructor for ‘struct snd_ump_endpoint_info’ [-Wshadow]
+   94 | int snd_ump_endpoint_info(snd_ump_t *ump, snd_ump_endpoint_info_t *info);
+      |                                                                        ^
+/workspace/scratch/27d876101a85/toolroot/usr/include/alsa/ump.h:135:66: warning: ‘int snd_ump_block_info(snd_ump_t*, snd_ump_block_info_t*)’ hides constructor for ‘struct snd_ump_block_info’ [-Wshadow]
+  135 | int snd_ump_block_info(snd_ump_t *ump, snd_ump_block_info_t *info);
+      |                                                                  ^
+[23/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_core/juce_core.cpp.o
+[24/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp.o
+[25/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_basics/juce_audio_basics.cpp.o
+[26/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_processors/juce_audio_processors.cpp.o
+[27/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_gui_extra/juce_gui_extra.cpp.o
+[28/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_graphics/juce_graphics.cpp.o
+[29/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp.o
+[30/37] Building C object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+[31/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_data_structures/juce_data_structures.cpp.o
+[32/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.cpp.o
+[33/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+[34/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+[35/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+[36/37] Building CXX object CMakeFiles/TimecodeCueBridge.dir/third_party/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp.o
+[37/37] Linking CXX executable "TimecodeCueBridge_artefacts/Release/Timecode Cue Bridge"

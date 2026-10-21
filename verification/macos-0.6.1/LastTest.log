@@ -1,0 +1,89 @@
+Start testing: Oct 22 04:35 JST
+----------------------------------------------------------
+1/4 Testing: cue_engine
+1/4 Test: cue_engine
+Command: "/Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64/tcb_core_tests"
+Directory: /Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64
+"cue_engine" start time: Oct 22 04:35 JST
+Output:
+----------------------------------------------------------
+Cue engine release-safe tests passed (7 groups)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cue_engine" end time: Oct 22 04:35 JST
+"cue_engine" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: ltc_osc_integration
+2/4 Test: ltc_osc_integration
+Command: "/Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64/tcb_integration_artefacts/Release/tcb_integration"
+Directory: /Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64
+"ltc_osc_integration" start time: Oct 22 04:35 JST
+Output:
+----------------------------------------------------------
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 44100 Hz / 30 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 48000 Hz / 30 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 24 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 25 fps
+PASS LTC waveform -> libltc -> CueEngine -> JUCE OSC -> UDP bytes: 96000 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 44100 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 48000 Hz / 30 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 24 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 25 fps
+PASS automatic LTC reacquisition: silence / high-frequency noise / DC / no callbacks / clock wrap: 96000 Hz / 30 fps
+PASS LIVE callback -> FIFO -> worker -> automatic LTC recovery -> cue -> OSC UDP / MIDI sink; repeated pauses, selective/all reset, disarmed input, device restart
+PASS drop-frame / reverse / silence / low noise rejection and invalid output
+PASS v2 migration (including disabled rows), v3 roundtrip, empty document and corrupt-settings rejection
+PASS MIDI bytes, auto note-off, explicit off, retrigger, panic, destructor cleanup and LTC -> MIDI dispatch (injected sink)
+All LTC / OSC / MIDI / settings integration scenarios passed
+<end of output>
+Test time =   1.94 sec
+----------------------------------------------------------
+Test Passed.
+"ltc_osc_integration" end time: Oct 22 04:35 JST
+"ltc_osc_integration" time elapsed: 00:00:01
+----------------------------------------------------------
+
+3/4 Testing: coremidi_virtual_routing
+3/4 Test: coremidi_virtual_routing
+Command: "/Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64/tcb_macos_midi_artefacts/Release/tcb_macos_midi"
+Directory: /Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64
+"coremidi_virtual_routing" start time: Oct 22 04:35 JST
+Output:
+----------------------------------------------------------
+PASS: CoreMIDI virtual routing, gate Note Off, CC, panic
+<end of output>
+Test time =   0.88 sec
+----------------------------------------------------------
+Test Passed.
+"coremidi_virtual_routing" end time: Oct 22 04:35 JST
+"coremidi_virtual_routing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: scene_editor
+4/4 Test: scene_editor
+Command: "/Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64/tcb_scene_tests_artefacts/Release/tcb_scene_tests"
+Directory: /Users/sei/Documents/Codex/2026-10-22/https-chatgpt-com-share-6ad91287-8914/work/source/TimecodeCueBridge/build-mac-arm64
+"scene_editor" start time: Oct 22 04:35 JST
+Output:
+----------------------------------------------------------
+PASS: actual + / - / duplicate / restore / name / numeric typing / invalid text / Escape / vertical drag / Shift drag / limits / FPS clamp / MIDI fields / fired display / row Rearm (unselected and recycled row) / per-scene rearm / empty list
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"scene_editor" end time: Oct 22 04:35 JST
+"scene_editor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 22 04:35 JST
