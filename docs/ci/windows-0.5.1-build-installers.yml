@@ -1,0 +1,43 @@
+name: Build and verify installers
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install NSIS
+        run: choco install nsis -y --no-progress
+      - name: Build GUI, tests and installer
+        shell: pwsh
+        run: ./packaging/windows/build.ps1
+      - name: Verify install, GUI, uninstall and retained data
+        shell: pwsh
+        run: ./tests/windows-lifecycle.ps1 -Setup ./dist/TimecodeCueBridge-0.5.1-Win11-x64-Setup.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Windows-x64-setup-and-test-logs
+          path: |
+            dist/*.exe
+            build-win/Testing/Temporary/LastTest.log
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure arm64
+        run: cmake -S . -B build-mac -G Xcode -DCMAKE_OSX_ARCHITECTURES=arm64
+      - name: Build and test
+        run: |
+          cmake --build build-mac --config Release --parallel 4
+          ctest --test-dir build-mac -C Release --output-on-failure
+      - name: Package PKG
+        run: bash packaging/macos/build_pkg.sh 'build-mac/TimecodeCueBridge_artefacts/Release/Timecode Cue Bridge.app' dist 0.5.1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macOS-arm64-unsigned-pkg
+          path: dist/*.pkg
