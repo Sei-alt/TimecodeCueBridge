@@ -1,6 +1,6 @@
 # Timecode Cue Bridge 0.6.1 — Apple Silicon Mac
 
-LTC音声を読み取り、指定した時刻でOSCとMIDIを送るアプリです。画面は英語です。
+LTC音声を読み取り、指定した時刻でOSCとMIDIを送るアプリです。画面は英語です。2026年10月22日のWindows/Mac統合正式リリースに収録しています。
 
 ## 起動
 

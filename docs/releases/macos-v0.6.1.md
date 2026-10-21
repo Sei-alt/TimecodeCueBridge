@@ -1,6 +1,6 @@
 # macOS arm64 0.6.1
 
-Apple Silicon向けの開発版です。2026年10月22日、ユーザーからMac版0.6.1の実機テスト合格の報告を受けました。確認構成はM1 MacBook Air上のTimecode Cue Bridge 0.6.1 → IACドライバ → Daslight 5で、MIDIルーティングが動作しました。個別のMIDIメッセージ種別やその他の試験項目は未記録です。M1・macOS 26.5.2でReleaseビルドと自動テスト4/4、DMGからコピーしたアプリのGUI起動を確認しました。
+Apple Silicon向けの0.6.1です。2026年10月22日、Windows/Mac統合リリースで正式版として公開しました。元のmacos-v0.6.1リリースは開発時点の履歴として残しています。2026年10月22日、ユーザーからMac版0.6.1の実機テスト合格の報告を受けました。確認構成はM1 MacBook Air上のTimecode Cue Bridge 0.6.1 → IACドライバ → Daslight 5で、MIDIルーティングが動作しました。個別のMIDIメッセージ種別やその他の試験項目は未記録です。M1・macOS 26.5.2でReleaseビルドと自動テスト4/4、DMGからコピーしたアプリのGUI起動を確認しました。
 
 - Command Line ToolsとCMakeでビルド可能
 - 画面に合わせた初期サイズとシーン欄のスクロール

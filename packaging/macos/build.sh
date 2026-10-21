@@ -37,7 +37,7 @@ trap 'rm -rf "$STAGE"' EXIT
 ln -s /Applications "$STAGE/Applications"
 cp "$ROOT/README-macOS-JA.md" "$STAGE/はじめに.md"
 cp "$ROOT/README-macOS.md" "$STAGE/Read Me.md"
-DMG="$OUT/TimecodeCueBridge-${VERSION}-macOS-arm64-development.dmg"
+DMG="$OUT/TimecodeCueBridge-${VERSION}-macOS-arm64.dmg"
 hdiutil create -volname 'Timecode Cue Bridge' -srcfolder "$STAGE" -ov -format UDZO "$DMG"
 hdiutil verify "$DMG"
 bash "$ROOT/packaging/macos/build_pkg.sh" "$APP" "$OUT" "$VERSION"
@@ -49,5 +49,5 @@ if [[ "${TCB_KEEP_APP_BUNDLE:-0}" != 1 ]]; then
   /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$APP" || true
   /bin/rm -R "$APP"
 fi
-echo "Development artifacts and test logs: $OUT"
+echo "Artifacts and test logs: $OUT"
 echo 'These artifacts are not notarized. Complete README-macOS.md acceptance checks on a Mac.'
