@@ -6,8 +6,8 @@ LTC音声のタイムコードを読み取り、指定したシーン時刻でOS
 
 | 対象 | 状態 |
 |---|---|
-| Windows 11 x64 / 0.5.1 | ユーザーが仮完成とした既存版。操作・変更履歴は[Windows向けREADME](README_JA.md)に記載 |
-| macOS arm64 / 0.6.1 | M1・macOS 26.5.2でネイティブビルド、自動試験4/4、DMGコピー後のGUI起動を確認。未公証の開発版 |
+| Windows 11 x64 / 0.5.1 | 仮完成版。操作・変更履歴は[Windows向けREADME](README_JA.md)に記載 |
+| macOS arm64 / 0.6.1 | M1・macOS 26.5.2でネイティブビルド、自動試験4/4、DMGコピー後のGUI起動を確認。未検証の開発版 |
 | mainの共通ソース / 0.6.1 | Windows実装を引き継いだ0.6.0 MacソースにMac修正を統合。Windowsでの再ビルド・実機回帰確認はこれから |
 
 Windows 0.5.1の元Source.zip、Setup.exe、検証ZIPは、windows-v0.5.1のReleaseで保存しています。当時のアプリ・依存ソースはrelease/windows-0.5.1ブランチと同じタグにも保存しています。現在のリポジトリにはWindowsの入力・出力・GUI・インストーラー実装も含まれます。
