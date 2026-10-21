@@ -26,7 +26,7 @@ LTC音声を読み取り、指定した時刻でOSCとMIDIを送るアプリで�
 
 「Audio MIDI設定 → ウインドウ → MIDIスタジオを表示」でIACドライバを開き、「装置はオンライン」を有効にしてバスを作ります。本アプリのI/O SettingsでRefreshを押してそのIACバスを出力に選び、受信ソフトでは同じバスを入力に選択します。各シーンのMIDIを有効にして、Note/CCの割り当てを受信側で設定してください。[AppleのIAC設定手順](https://support.apple.com/guide/audio-midi-setup/ams1013/mac)
 
-MIDI Panicは本アプリが保持しているノートを停止してDisarmします。実機やDaslightとの割り当ては利用する構成で確認してください。
+MIDI Panicは本アプリが保持しているノートを停止してDisarmします。2026年10月22日、M1 MacBook Air上で本アプリ → IACドライバ → Daslight 5のMIDIルーティングが動作したとのユーザー確認を受けています。
 
 ## 設定と削除
 
@@ -38,7 +38,7 @@ DMGから入れた場合は、終了してからアプリをゴミ箱へ移し�
 
 ビルドにはCommand Line Tools（またはXcode）とCMake 3.24以上が必要です。JUCEとlibltcのソースは同梱しています。ソースのルートで `bash packaging/macos/build.sh` を実行すると、Releaseビルド、自動テスト、署名検査、GUI起動試験、DMG/PKG生成を行います。フル版Xcodeのインストールは必須ではありません。
 
-検証済み項目と未検証項目は `VERIFICATION-macOS-JA.md` を確認してください。実オーディオIFのLTC入力、IACとDaslightの実接続、マイク許可ダイアログの操作、本番環境の遅延、PKGの管理者権限でのインストールは別途確認が必要です。
+検証済み項目と未検証項目は `VERIFICATION-macOS-JA.md` を確認してください。実オーディオIFのLTC入力、マイク許可ダイアログの操作、本番環境の遅延、PKGの管理者権限でのインストールは別途確認が必要です。
 
 ## アプリ一覧の重複を避ける
 

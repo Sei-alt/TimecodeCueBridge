@@ -34,7 +34,7 @@ In **I/O Settings**, select the LTC input device/channel and the matching 24/25/
 4. Select the same IAC bus as the MIDI input in the receiving application, such as a compatible Mac installation of Daslight. Configure its MIDI mapping.
 5. Save & Apply, then use **Test Scene** to verify Note/CC reception before arming LTC.
 
-Avoid routing the receiver's MIDI output back into the same input bus. The automated CoreMIDI test creates a temporary unique virtual destination; it does not change IAC configuration or require a physical MIDI device. Actual IAC/Daslight compatibility remains a manual acceptance test.
+Avoid routing the receiver's MIDI output back into the same input bus. The automated CoreMIDI test creates a temporary unique virtual destination; it does not change IAC configuration or require a physical MIDI device. On 22 October 2026, the user confirmed MIDI routing from Timecode Cue Bridge 0.6.1 through the IAC Driver to Daslight 5 on an M1 MacBook Air. Individual MIDI message types were not specified.
 
 ## Data and uninstall
 
